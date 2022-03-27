@@ -1,0 +1,94 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "宏达万枫酒店",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/predetermine/predetermine",
+      "style": {
+        "navigationBarTitleText": "万枫预定"
+      }
+    },
+    {
+      "path": "pages/order/order",
+      "style": {
+        "navigationBarTitleText": "我的订单"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "subPackages": [
+    // {
+    //   "root": "predetermine",
+    //   "pages": []
+    // },
+    {
+      "root": "pages/mysub",
+      "pages": [
+        {
+          "path": "shop-car/shop-car",
+          "style": {
+            "navigationBarTitleText": "购物车"
+          }
+        }
+      ]
+    }
+    // {
+    //   "root": "order",
+    //   "pages": []
+    // }
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/sindex.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/predetermine/predetermine",
+        "iconPath": "static/icon/predetermine.png",
+        "selectedIconPath": "static/icon/spredetermine.png",
+        "text": "预定"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "static/icon/order.png",
+        "selectedIconPath": "static/icon/sorder.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/icon/my.png",
+        "selectedIconPath": "static/icon/smy.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  }
+}
